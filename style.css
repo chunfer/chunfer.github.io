@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	background: url(images/spaceport.jpg) no-repeat;
+        background-size: cover;
+}
+
+
+div#page-header{
+        height:100px;
+	background-color:black;
+	border-bottom: white solid 10px;
+}
+
+div#page-header div#left-side{
+    float:left;
+	width: 200px;
+}
