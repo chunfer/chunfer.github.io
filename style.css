@@ -7,7 +7,6 @@ body {
 	font-family: Helvetica, sans-serif;
 	background: url(images/spaceport.jpg) no-repeat;
 	background-size: cover;
-	color: white;
 }
 
 
@@ -22,8 +21,13 @@ div#page-header div#left-side{
 	padding: 1em;
 	width: 200px;
 }
+
+#post {
+	height: 100%;
+}
+
 .sidenav {
-	height: 495px;
+	height: 100%;
 	width: 0;
 	z-index: 1;
 	position: sticky;
@@ -34,7 +38,7 @@ div#page-header div#left-side{
 	transition: 0.5s;
 	padding-top: 60px;
   }
-  
+
   .sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
@@ -52,13 +56,16 @@ div#page-header div#left-side{
 	position: absolute;
 	top: 0;
 	right: 25px;
-	font-size: 36px;
+	font-size: 40px;
 	margin-left: 50px;
   }
   
   #main {
 	transition: margin-left .5s;
+	margin: 10px;
 	padding: 16px;
+	background-color: white;
+	border-radius: 0.5em;
   }
   
   @media screen and (max-height: 450px) {
