@@ -17,9 +17,14 @@ div#page-header{
 }
 
 div#page-header div#left-side{
-	float:left;
+	float: left;
 	padding: 1em;
 	width: 200px;
+}
+
+div#page-header div#left-side img{
+	width: 130%;
+	height: auto;
 }
 
 #post {
