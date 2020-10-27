@@ -27,6 +27,7 @@ header{
 	max-width: 37%;
 	height: auto;
 }
+
 #header-nav{
 	height: inherit;
     width: 520px;
@@ -166,9 +167,10 @@ header{
 }
 
 @media screen and (max-width: 600px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 0.7rem;}
-	#header-nav a{font-size: 0.9rem; margin: 5px;}
+	.sidenav {padding-top: 20px;}
+	.sidenav a {font-size: 0.6rem;}
+	#header-nav a{font-size: 0.7rem; margin: 5px;}
 	.info-sections h2{font-size: 1.4rem;}
+	.page-title{ padding: 0.5em; max-width: 70%;}
 }
 
