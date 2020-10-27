@@ -1,39 +1,67 @@
-* {
-	margin: 0;
-	padding: 0;
+html{
+	height: 100%;
+	margin: 0px; 
+	padding: 0px;
 }
 
 body {
 	font-family: Helvetica, sans-serif;
-	background: url(images/spaceport.jpg) no-repeat;
+	background: rgb(29,36,45);
 	background-size: cover;
+	height: 89.5%;
+	margin: 0px;
+	padding: 0px;
 }
 
-
-div#page-header{
-	height:100px;
+header{
+	height: 100px;
 	background-color:black;
-	border-bottom: white solid 10px;
+	border-bottom: rgb(255, 230, 0) solid 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-div#page-header div#left-side{
-	float: left;
+.page-title{
 	padding: 1em;
-	width: 200px;
-}
-
-div#page-header div#left-side img{
-	width: 130%;
+	max-width: 37%;
 	height: auto;
 }
+#header-nav{
+	height: inherit;
+    width: 500px;
+    padding-right: 30px;
+}
 
-#post {
-	height: 100%;
+#header-nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0;
+	height: inherit;
+}
+
+#header-nav li{
+	height: inherit;
+}
+
+#header-nav a{
+	color: white;
+	font-family: 'Staatliches', cursive;
+	font-size: 20px;
+	display: flex;
+	height: inherit;
+	text-decoration: none;
+	align-items: center;
+}
+#header-nav a:hover{
+	color: black;
+	background: white;
 }
 
 .sidenav {
-	height: 100%;
-	width: 0;
+	height: 90%;
+	width: 45px;
 	z-index: 1;
 	position: sticky;
 	float: left;
@@ -44,36 +72,90 @@ div#page-header div#left-side img{
 	padding-top: 60px;
   }
 
-  .sidenav a {
-	padding: 8px 8px 8px 32px;
+.sidenav a {
+	padding: 8px 8px 8px 50px;
 	text-decoration: none;
 	font-size: 25px;
 	color: #818181;
-	display: block;
+	display: none;
 	transition: 0.3s;
-  }
+}
   
-  .sidenav a:hover {
+.sidenav a:hover {
 	color: #f1f1f1;
-  }
+	background-color: rgba(200, 200, 200, 0.5);
+}
   
-  .sidenav .closebtn {
+.sidenav #closebtn {
+	display: block;
 	position: absolute;
 	top: 0;
-	right: 25px;
+	right: 5px;
 	font-size: 40px;
 	margin-left: 50px;
-  }
+}
+
+.sidenav #closebtn:hover {
+	color: #f1f1f1;
+	background-color: #111;
+}
   
-  #main {
+#main {
 	transition: margin-left .5s;
-	margin: 10px;
-	padding: 16px;
+	margin: 1em 1em 1em 63px;
+	background-color: #e8e8e8;
+	border-radius: 8px;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	height: 800px;
+}
+
+.main-header{
+	background-color: black;
+	background-image: url("images/astronauta.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: auto 366px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	padding-top: 16px;
+	padding-left: 32px;
+	height: 350px;
+}
+#main-headerContent{
+	width: 500px;
+	box-sizing: border-box;
+}
+
+.main-header h1{
+	font-size: 36px;
+	color: white;
+	font-family: 'Arvo', serif;
+}
+
+.main-header strong{
+	color: rgb(255, 230, 0);
+}
+
+.info-sections{
 	background-color: white;
-	border-radius: 0.5em;
-  }
-  
-  @media screen and (max-height: 450px) {
+	height: 400px;
+	margin: 1em;
+}
+
+.info-sections h2{
+	font-family: 'Roboto Slab', serif;
+	color: gray;
+	font-size: 36px;
+	padding: 10px 5px 0 5px;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 3px solid #e8e8e8;
+
+}
+
+@media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
-  }
+}
+

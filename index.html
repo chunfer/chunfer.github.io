@@ -3,27 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Stack Developer's Guide</title>
+  <title>Juan Fernando Montufar Juarez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <script src="scripts.js"></script> 
+  <link rel="shortcut icon" href="images/icon-Techworks.png" type="image/png">
+  <script src="scripts.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
 </head>
 <body>
-  <div id="page-header">
-    <div id="left-side">
-      <a href="#" class="page-title"><img src="images/logo-Techworks.png" alt="Full Stack Developer's Guide"/></a>
+  <header id="page-header">
+    <a href="#" ><img class="page-title" src="images/logo - chunfer.png" alt="Full Stack Developer's Guide"/></a>
+    <div id="header-nav">
+      <ul>
+        <li><a href="#portfolio" class="data">Portafolio</a></li>
+        <li><a href="#experience" class="data">Experiencia</a></li>
+        <li><a href="#work" class="data">Trabajemos Juntos</a></li>
+      </ul>
     </div>
+  </header>
+  <nav id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class='fas fa-angle-right' id="closebtn" onclick="NavManager()"></a>
+    <a href="#" class="info">About</a>
+    <a href="#" class="info">Services</a>
+    <a href="#" class="info">Clients</a>
+    <a href="#" class="info">Contact</a>
+  </nav>
+  <div id="main">
+    <section class="main-header">
+      <div id="main-headerContent">
+        <h1>Hola! Mi nombre es <strong>Fernando</strong>,
+          desarrollador de <strong>Front End</strong>. En esta 
+          página web está <strong>mi historia</strong> profesional y mucho más.
+        </h1>
+      </div> 
+    </section>
+    <section class="info-sections" id="portfolio">
+      <h2>
+        Portafolio
+      </h2>
+
+    </section>
   </div>
-  <div id="post">
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-    </div>
-    <div id="main">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-    </div>
   </div>
 </body>
 </html>
