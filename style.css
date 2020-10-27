@@ -14,9 +14,9 @@ body {
 }
 
 header{
-	height: 100px;
+	max-height: 100px;
 	background-color:black;
-	border-bottom: rgb(255, 230, 0) solid 10px;
+	border-bottom: rgb(255, 230, 0) solid 1vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -29,8 +29,8 @@ header{
 }
 #header-nav{
 	height: inherit;
-    width: 500px;
-    padding-right: 30px;
+    width: 520px;
+    padding-right: 20px;
 }
 
 #header-nav ul{
@@ -48,7 +48,7 @@ header{
 #header-nav a{
 	color: white;
 	font-family: 'Staatliches', cursive;
-	font-size: 20px;
+	font-size: 2vw;
 	display: flex;
 	height: inherit;
 	text-decoration: none;
@@ -60,22 +60,22 @@ header{
 }
 
 .sidenav {
-	height: 90%;
-	width: 45px;
+	height: 100%;
+	width: 5vw;
 	z-index: 1;
-	position: sticky;
+	position: fixed;
 	float: left;
 	left: 0;
 	background-color: #111;
 	overflow-x: hidden;
 	transition: 0.5s;
-	padding-top: 60px;
+	padding-top: 6vw;
   }
 
 .sidenav a {
-	padding: 8px 8px 8px 50px;
+	padding: 1vw 1vw 1vw 5vw;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 2vw;
 	color: #818181;
 	display: none;
 	transition: 0.3s;
@@ -90,9 +90,8 @@ header{
 	display: block;
 	position: absolute;
 	top: 0;
-	right: 5px;
-	font-size: 40px;
-	margin-left: 50px;
+	right: 0.8vw;
+	font-size: 3vw;
 }
 
 .sidenav #closebtn:hover {
@@ -102,33 +101,45 @@ header{
   
 #main {
 	transition: margin-left .5s;
-	margin: 1em 1em 1em 63px;
+	margin: 2vw 2vw 2vw 7vw;
 	background-color: #e8e8e8;
 	border-radius: 8px;
 	border-top-left-radius: 16px;
 	border-top-right-radius: 16px;
-	height: 800px;
+	height: 1000px;
 }
 
 .main-header{
 	background-color: black;
-	background-image: url("images/astronauta.png");
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: auto 366px;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
-	padding-top: 16px;
-	padding-left: 32px;
-	height: 350px;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	max-height: 500px;
 }
+#main-headerImage{
+	align-self: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+#main-headerImage img{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	height: auto;
+}
+
 #main-headerContent{
-	width: 500px;
-	box-sizing: border-box;
+	align-self: center;
+	padding-left: 32px;
+	max-width: 500px;
+	height: auto;
 }
 
 .main-header h1{
-	font-size: 36px;
+	font-size: 2.8vw;
+    margin: 0;
 	color: white;
 	font-family: 'Arvo', serif;
 }
@@ -146,8 +157,8 @@ header{
 .info-sections h2{
 	font-family: 'Roboto Slab', serif;
 	color: gray;
-	font-size: 36px;
-	padding: 10px 5px 0 5px;
+	font-size: 2.8vw;
+	padding: 2.5vw 1.5vw 0 1.5vw;
 	text-transform: uppercase;
 	text-align: center;
 	border-bottom: 3px solid #e8e8e8;
