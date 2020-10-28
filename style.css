@@ -50,10 +50,11 @@ header{
 	color: white;
 	font-family: 'Staatliches', cursive;
 	font-size: 2vw;
-	text-align:center;
+	padding: 8px;
+	text-decoration: none;
+	border-radius: 8px;
 	display: flex;
 	height: inherit;
-	text-decoration: none;
 	align-items: center;
 }
 #header-nav a:hover{
@@ -216,17 +217,44 @@ h2{
 	width: 340px;
 	height: 270px;
 	margin: 10px;
-	flex-shrink: 0;
 	background-color: white;
-	border: 5px solid white;
 	border-radius: 8px;
+	overflow: hidden;
 }
 
 .experience img{
 	width: 340px;
 	height: 200px;
 	object-fit: cover;
-	overflow: hidden;
+}
+
+.experience-details{
+	margin: 8px;
+	font-size: 14px;
+	margin-top: -85px;
+	padding: 5px 8px 14px 8px;
+	position: relative;
+	background-color: gainsboro;
+	text-align: center;
+}
+
+.experience-details p{
+	font-size: 12px;
+	text-align: left;
+}
+
+.experience-details a{
+	text-decoration: none;
+	color: royalblue;
+	border-radius: 5px;
+	padding: 5px 10px;
+	border: 1px solid royalblue;
+}
+
+.experience-details a:hover{
+	color: white;
+	background-color: royalblue;
+	border: 1px solid white;
 }
 
 @media screen and (max-width: 600px) {
