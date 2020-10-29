@@ -212,10 +212,11 @@ h2{
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 1em;
+	padding-bottom: 1em;
 }
 .experience{
 	width: 340px;
-	height: 270px;
+	height: 275px;
 	margin: 10px;
 	background-color: white;
 	border-radius: 8px;
@@ -255,6 +256,126 @@ h2{
 	color: white;
 	background-color: royalblue;
 	border: 1px solid white;
+}
+
+footer {
+	border-top: 5px solid rgb(255, 230, 0);
+	transition: margin-left .5s;
+	margin-left: 5vw;
+}
+
+#work {
+	background-color: rgb(46, 34, 28);
+	color: white;
+	padding: 1em 2em;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#email-form label{
+	display: block;
+	font-weight: 900;
+	padding-bottom: 5px;
+	font-size: 1.3em;
+}
+
+#email-box {
+	display: inline-block;
+	opacity: 0.85;
+	padding: 8px 20px 8px 30px;
+	border-color: rgb(46, 34, 28);
+	border-radius: 5px;
+	margin-right: 10px;
+	background-image: url("images/at.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position-x: 5px;
+	background-position-y: center;
+}
+
+#email-box:focus {
+	opacity: 1;
+}
+
+#email-send{
+	display: inline-block;
+	border-color: rgb(46, 34, 28);
+	font-weight: 600;
+	padding: 8px 17px;
+	border-radius: 5px;
+	color: white;
+	background-color: rgb(46, 34, 28);
+}
+
+#email-send:hover{
+	background-color: white;
+	color: rgb(46, 34, 28);
+}
+
+
+#social-media{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.social {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	background-size: 50px 50px;
+}
+
+.social.facebook {
+	background-image: url("images/facebook.svg");
+}
+
+.social.facebook:hover {
+	background-image: url("images/facebook-white.svg");
+}
+
+.social.github {
+	background-image: url("images/github.svg");
+}
+
+.social.github:hover {
+	background-image: url("images/github-white.svg");
+}
+
+.social.instagram {
+	background-image: url("images/instagram.svg");
+}
+
+.social.instagram:hover {
+	background-image: url("images/instagram-white.svg");
+}
+
+#ending {
+	display: flex;
+	flex-wrap: wrap;
+	color: white;
+	background-color: black;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#gerente{
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	align-items: center;
+}
+
+#ending strong{
+	font-weight: 900;
+}
+
+#ending img{
+	margin-left: 5px;
+	width: 140px;
+	height: 35px;
 }
 
 @media screen and (max-width: 600px) {

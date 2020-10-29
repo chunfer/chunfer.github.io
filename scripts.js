@@ -4,6 +4,7 @@ function NavManager() {
   if (document.getElementById("closebtn").innerHTML == ""){
     document.getElementById("mySidenav").style.width = "20vw";
     document.getElementById("main").style.marginLeft = "22vw";
+    document.getElementById("page-footer").style.marginLeft = "20vw";
     document.body.style.opacity = 0.7;
     document.getElementById("closebtn").className = "	fas fa-angle-left"; 
     document.getElementById("closebtn").innerHTML = " ";
@@ -15,6 +16,7 @@ function NavManager() {
   } else {
     document.getElementById("mySidenav").style.width = "5vw";
     document.getElementById("main").style.marginLeft= "7vw";
+    document.getElementById("page-footer").style.marginLeft = "5vw";
     
     document.body.style.opacity = 1;
     document.getElementById("closebtn").className = "	fas fa-angle-right";
