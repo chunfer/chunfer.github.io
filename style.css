@@ -14,24 +14,27 @@ body {
 }
 
 header{
-	max-height: 10vw;
 	background-color:black;
 	border-bottom: rgb(255, 230, 0) solid 1vw;
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.page-title{
+#title-link{
+	height: 10vw;
+}
+
+#page-title{
 	padding: 1em;
-	max-width: 37%;
-	height: auto;
+	height: 80%;
+	border: 0;
 }
 
 #header-nav{
 	height: inherit;
-    width: 520px;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 #header-nav ul{
@@ -39,24 +42,21 @@ header{
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0;
-	height: inherit;
-}
-
-#header-nav li{
-	height: inherit;
+	padding: 0;
 }
 
 #header-nav a{
 	color: white;
 	font-family: 'Staatliches', cursive;
-	font-size: 2vw;
+	font-size: 1.8rem;
 	padding: 8px;
 	text-decoration: none;
 	border-radius: 8px;
 	display: flex;
-	height: inherit;
 	align-items: center;
+	text-align: center;
 }
+
 #header-nav a:hover{
 	color: black;
 	background: white;
@@ -162,7 +162,7 @@ h2{
 	background-color: white;
 	font-family: 'Roboto Slab', serif;
 	color: gray;
-	font-size: 3vw;
+	font-size: 2.3rem;
 	padding: 2.5vw 1.5vw 0 1.5vw;
 	text-transform: uppercase;
 	text-align: center;
@@ -175,22 +175,23 @@ h2{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
 	margin: 5px 10px;
 	border-radius: 8px;
 }
 
 .project-description{
 	padding-left: 20px;
-	width: 500px;
+	width: 45%;
 }
 
 .project-description h3{
 	font-family: 'Roboto Slab', serif;
-	font-size: 2vw;
+	font-size: 2rem;
 }
 .project-subtitle{
 	font-family: 'Staatliches', cursive;
-	font-size: 1.5vw;
+	font-size: 1.5rem;
 }
 
 .project-info{
@@ -198,7 +199,7 @@ h2{
 }
 
 .project img{
-	max-width: 500px;
+	max-width: 40%;
 	padding: 15px;
 }
 
@@ -378,11 +379,57 @@ footer {
 	height: 35px;
 }
 
-@media screen and (max-width: 600px) {
-	.sidenav {padding-top: 20px;}
-	.sidenav a {font-size: 0.6rem;}
-	#header-nav a{font-size: 0.7rem; margin: 5px;}
-	.info-sections h2{font-size: 1.4rem;}
-	.page-title{ padding: 0.5em; max-width: 70%;}
+@media screen and (max-width: 767px) {
+	.sidenav {
+		padding-top: 20px;
+	}
+
+	.sidenav a {
+		font-size: 0.6rem;
+	}
+
+	.info-sections h2{
+		font-size: 1.4rem;
+	}
+
+	#page-title{
+		padding: 0.5em;
+	}
+
+	.project-description{
+		padding-left: 5px;
+		width: 90%;
+	}
+
+	.project img{
+		max-width: 90%;
+		padding: 5px;
+	}
+
+	#header-nav a{
+		font-size: 1.5rem;
+	}
+
+	#header-nav{
+		width: 100%;
+		padding-right: 0;
+	}
 }
 
+@media screen and (max-width: 480px) {
+
+	#header-nav ul{
+		flex-direction: column;
+	}
+
+	#header-nav a{
+		font-size: 1.3rem;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	html{
+		font-size: 12px;
+	}
+}
