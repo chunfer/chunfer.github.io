@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link rel="shortcut icon" href="images/icon-Techworks.png" type="image/png">
-  <script src="scripts.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js'></script> 
 </head>
 <body>
@@ -17,19 +16,20 @@
     <a href="#" id="title-link"><img id="page-title" src="images/logo - chunfer.png" alt="Chunfer"/></a>
     <div id="header-nav">
       <ul>
-        <li><a href="#portfolio" class="data">Portafolio</a></li>
-        <li><a href="#experience" class="data">Experiencia</a></li>
-        <li><a href="#work" class="data">Trabajemos Juntos</a></li>
+        <li class="port-link"><a href="#portfolio" class="data">Portafolio</a></li>
+        <li class="exp-link"><a href="#experience" class="data">Experiencia</a></li>
+        <li class="work-link"><a href="#work" class="data">Trabajemos Juntos</a></li>
       </ul>
     </div>
+    <div id="hamburger">&#9776;</div>
   </header>
-  <nav id="mySidenav" class="sidenav">
+  <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class='fas fa-angle-right' id="closebtn" onclick="NavManager()"></a>
-    <a href="#" class="info">About</a>
+    <a href="#" class="info" style="margin-top: 5vw;">About</a>
     <a href="#" class="info">Services</a>
     <a href="#" class="info">Clients</a>
     <a href="#" class="info">Contact</a>
-  </nav>
+  </div>
   <div id="main">
     <section class="main-header">
       <div id="main-headerContent">
@@ -38,9 +38,7 @@
           página web está <strong>mi historia</strong> profesional y mucho más.
         </h1>
       </div> 
-      <div id="main-headerImage">
-        <img src="images/astronauta.png" alt="astronauta">
-      </div>
+      <img src="images/astronauta.png" alt="astronauta">
     </section>
     <section class="projects-section" id="portfolio">
       <h2>
@@ -119,7 +117,7 @@
             <p>
               Se tiene 2 años de experience en 
               la realización de imágenes vectoriales
-              para logotipos o promociones.
+              para logos o promociones.
             </p>
             <a href="#">Ver más</a>
           </div>
@@ -171,5 +169,6 @@
       
     </section>
   </footer>
+  <script src="scripts.js"></script>
 </body>
 </html>
