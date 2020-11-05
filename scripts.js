@@ -45,6 +45,7 @@ function hideShow3() {
 
 function NavManager() {
   var arrayinfo = document.getElementsByClassName("info");
+  // console.log(text_size);
 
   if (document.getElementById("closebtn").innerHTML == ""){
     document.getElementById("mySidenav").style.width = "20vw";
@@ -56,7 +57,6 @@ function NavManager() {
     for (let index = 0; index < arrayinfo.length; index++) {
       arrayinfo[index].style.display = 'block';
     }
-    document.getElementById("main-headerContent-h1").style.fontSize = "2.3vw";
 
   } else {
     document.getElementById("mySidenav").style.width = "5vw";
@@ -69,7 +69,6 @@ function NavManager() {
     for (let index = 0; index < arrayinfo.length; index++) {
       arrayinfo[index].style.display = 'none';
     }
-    document.getElementById("main-headerContent-h1").style.fontSize = "2.8vw";
   }
 }
 
