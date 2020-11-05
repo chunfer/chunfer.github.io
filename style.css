@@ -508,6 +508,10 @@ footer {
 		transition: margin-top 0.5s;
 	}
 	
+	.experience{
+		height: auto;
+	}
+
 	#title-link {
 		height: 4rem;
 	}
